@@ -1,0 +1,15 @@
+#"Copyright ? 2019-present Lenovo
+#Licensed under BSD-3, see COPYING.BSD file for details."
+
+[Unit]
+Description=Stop Host
+Conflicts=obmc-chassis-poweron@0.target
+
+[Service]
+RemainAfterExit=yes
+Type=oneshot
+ExecStart=/usr/bin/env poweroff.sh
+SyslogIdentifier=poweroff.sh
+
+[Install]
+WantedBy=obmc-chassis-poweroff@0.target

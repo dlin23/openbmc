@@ -1,0 +1,17 @@
+#"Copyright (c) 2019-present Lenovo
+#Licensed under BSD-3, see COPYING.BSD file for details."
+
+[Unit]
+Description=Lenovo Host power on
+Requires=host-gpio.service
+After=host-gpio.service
+Conflicts=obmc-chassis-poweroff@0.target
+
+[Service]
+RemainAfterExit=no
+Type=oneshot
+ExecStart=/usr/bin/env poweron.sh
+SyslogIdentifier=poweron.sh
+
+[Install]
+WantedBy=obmc-chassis-poweron@0.target

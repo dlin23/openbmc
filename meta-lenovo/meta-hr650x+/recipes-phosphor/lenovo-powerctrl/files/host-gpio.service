@@ -1,0 +1,16 @@
+#"Copyright ? 2019-present Lenovo
+#Licensed under BSD-3, see COPYING.BSD file for details."
+
+
+[Unit]
+Description=Configure GPIOs for Host Power Control
+
+[Service]
+Restart=no
+RemainAfterExit=true
+Type=oneshot
+ExecStart=/usr/bin/env init_once.sh
+SyslogIdentifier=init_once.sh
+
+[Install]
+WantedBy={SYSTEMD_DEFAULT_TARGET}
