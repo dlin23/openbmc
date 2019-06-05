@@ -670,21 +670,21 @@
     pin_gpio_f1 {
         gpio-hog;
         gpios = <ASPEED_GPIO(F, 1) GPIO_ACTIVE_HIGH>;
-        output-high;
+        input;
         line-name = "CPU2_PROCDIS_BMC_N";
     };
 
     pin_gpio_r6 {
         gpio-hog;
         gpios = <ASPEED_GPIO(R, 6) GPIO_ACTIVE_HIGH>;
-        output-high;
+        input;
         line-name = "CPU3_PROCDIS_BMC_N";
     };
 
     pin_gpio_r7 {
         gpio-hog;
         gpios = <ASPEED_GPIO(R, 7) GPIO_ACTIVE_HIGH>;
-        output-high;
+        input;
         line-name = "CPU4_PROCDIS_BMC_N";
     };
 
