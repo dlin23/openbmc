@@ -1,0 +1,151 @@
+{
+    "sensors" : [
+        {
+            "name": "FAN0_Speed",
+            "type": "fan",
+            "readPath": "/xyz/openbmc_project/sensors/fan_tach/FAN0_Speed",
+            "min": 0,
+            "max": 255
+        },
+        {
+            "name": "FAN1_Speed",
+            "type": "fan",
+            "readPath": "/xyz/openbmc_project/sensors/fan_tach/FAN1_Speed",
+            "min": 0,
+            "max": 255
+        },
+        {
+            "name": "FAN2_Speed",
+            "type": "fan",
+            "readPath": "/xyz/openbmc_project/sensors/fan_tach/FAN2_Speed",
+            "min": 0,
+            "max": 255
+        },
+        {
+            "name": "FAN3_Speed",
+            "type": "fan",
+            "readPath": "/xyz/openbmc_project/sensors/fan_tach/FAN3_Speed",
+            "min": 0,
+            "max": 255
+        },
+        {
+            "name": "FAN4_Speed",
+            "type": "fan",
+            "readPath": "/xyz/openbmc_project/sensors/fan_tach/FAN4_Speed",
+            "min": 0,
+            "max": 255
+        },
+        {
+            "name": "FAN5_Speed",
+            "type": "fan",
+            "readPath": "/xyz/openbmc_project/sensors/fan_tach/FAN5_Speed",
+            "min": 0,
+            "max": 255
+        },
+        {
+            "name": "FAN6_Speed",
+            "type": "fan",
+            "readPath": "/xyz/openbmc_project/sensors/fan_tach/FAN6_Speed",
+            "min": 0,
+            "max": 255
+        },
+        {
+            "name": "FAN7_Speed",
+            "type": "fan",
+            "readPath": "/xyz/openbmc_project/sensors/fan_tach/FAN7_Speed",
+            "min": 0,
+            "max": 255
+        },
+        {
+            "name": "FAN8_Speed",
+            "type": "fan",
+            "readPath": "/xyz/openbmc_project/sensors/fan_tach/FAN8_Speed",
+            "min": 0,
+            "max": 255
+        },
+        {
+            "name": "FAN9_Speed",
+            "type": "fan",
+            "readPath": "/xyz/openbmc_project/sensors/fan_tach/FAN9_Speed",
+            "min": 0,
+            "max": 255
+        },
+        {
+            "name": "FAN10_Speed",
+            "type": "fan",
+            "readPath": "/xyz/openbmc_project/sensors/fan_tach/FAN10_Speed",
+            "min": 0,
+            "max": 255
+        },
+        {
+            "name": "FAN11_Speed",
+            "type": "fan",
+            "readPath": "/xyz/openbmc_project/sensors/fan_tach/FAN11_Speed",
+            "min": 0,
+            "max": 255
+        },
+        {
+            "name": "FAN12_Speed",
+            "type": "fan",
+            "readPath": "/xyz/openbmc_project/sensors/fan_tach/FAN12_Speed",
+            "min": 0,
+            "max": 255
+        },
+        {
+            "name": "FAN13_Speed",
+            "type": "fan",
+            "readPath": "/xyz/openbmc_project/sensors/fan_tach/FAN13_Speed",
+            "min": 0,
+            "max": 255
+        },
+        {
+            "name": "PDB_FAN0_Speed",
+            "type": "fan",
+            "readPath": "/xyz/openbmc_project/sensors/fan_tach/PDB_FAN0_Speed",
+            "min": 0,
+            "max": 255
+        },
+        {
+            "name": "PDB_FAN1_Speed",
+            "type": "fan",
+            "readPath": "/xyz/openbmc_project/sensors/fan_tach/PDB_FAN1_Speed",
+            "min": 0,
+            "max": 255
+        },
+        {
+            "name": "PDB_FAN2_Speed",
+            "type": "fan",
+            "readPath": "/xyz/openbmc_project/sensors/fan_tach/PDB_FAN2_Speed",
+            "min": 0,
+            "max": 255
+        }    
+    ],
+    "zones" : [
+        {
+            "id": 1,
+            "minThermalOutput": 3000.0,
+            "failsafePercent": 75.0,
+            "pids": [
+                {
+                    "name": "FAN0_Speed0-Speed4",
+                    "type": "fan",
+                    "inputs": ["FAN0_Speed0", "FAN0_Speed4"],
+                    "setpoint": 90.0,
+                    "pid": {
+                        "samplePeriod": 0.1,
+                        "proportionalCoeff": 0.0,
+                        "integralCoeff": 0.0,
+                        "feedFwdOffsetCoeff": 0.0,
+                        "feedFwdGainCoeff": 0.010,
+                        "integralLimit_min": 0.0,
+                        "integralLimit_max": 0.0,
+                        "outLim_min": 30.0,
+                        "outLim_max": 100.0,
+                        "slewNeg": 0.0,
+                        "slewPos": 0.0
+                    }
+                }
+            ]
+        }
+    ]
+}

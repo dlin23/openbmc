@@ -1,0 +1,25 @@
+--- git/src/FruDevice.cpp	2019-06-05 09:52:18.671503945 +0800
++++ git_mod/src/FruDevice.cpp	2019-06-05 10:17:17.166147414 +0800
+@@ -226,6 +226,7 @@
+                 for (size_t jj = 1; jj <= FRU_AREAS.size(); jj++)
+                 {
+                     auto area_offset = device[jj];
++                    auto tmp_area_offset = area_offset;
+                     if (area_offset != 0)
+                     {
+                         area_offset *= 8;
+@@ -236,7 +237,13 @@
+                                       << " address " << ii << "\n";
+                             return -1;
+                         }
+-                        int length = block_data[1] * 8;
++                        int length;
++
++                        /* The data length of internal area is byte 2, others byte 1*/
++                        if (tmp_area_offset != 0 && jj == 1)
++                            length = block_data[2] * 8;
++                        else
++                            length = block_data[1] * 8;
+                         device.insert(device.end(), block_data.begin(),
+                                       block_data.begin() + 8);
+                         length -= 8;
