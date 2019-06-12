@@ -47,7 +47,6 @@ SUMMARY_${PN}-system = "Lenovo System"
 RDEPENDS_${PN}-system = " \
         ipmitool \
         tree \
-        obmc-pydevtools \
         spitools \
         bmcweb \
         entity-manager \
