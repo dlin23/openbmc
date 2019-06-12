@@ -48,6 +48,7 @@ RDEPENDS_${PN}-system = " \
         ipmitool \
         tree \
         spitools \
+        strace \
         bmcweb \
         entity-manager \
         phosphor-webui \
@@ -55,7 +56,4 @@ RDEPENDS_${PN}-system = " \
         uart-routing \
         phosphor-sel-logger \
         dbus-sensors \
-        google-ipmi-sys \
-        phosphor-ipmi-ethstats \
-        uart-routing \
         "
