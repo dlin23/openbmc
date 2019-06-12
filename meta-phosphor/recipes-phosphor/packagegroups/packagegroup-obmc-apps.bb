@@ -52,7 +52,7 @@ RDEPENDS_${PN}-extrasdev = " \
 
 SUMMARY_${PN}-extrasdevtools = "Development tools"
 RDEPENDS_${PN}-extrasdevtools = " \
-        libgpiod \
+        libgpiod-tools \
         "
 
 # Use the fan control package group for applications
@@ -92,7 +92,6 @@ RDEPENDS_${PN}-logging = " \
 SUMMARY_${PN}-remote-logging = "Remote logging applications"
 RDEPENDS_${PN}-remote-logging = " \
         rsyslog \
-        rsyslog-policy \
         phosphor-rsyslog-config \
         "
 

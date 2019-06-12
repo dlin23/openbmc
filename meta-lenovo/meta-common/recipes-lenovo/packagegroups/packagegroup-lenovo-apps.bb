@@ -46,7 +46,8 @@ RDEPENDS_${PN}-flash = " \
 SUMMARY_${PN}-system = "Lenovo System"
 RDEPENDS_${PN}-system = " \
         ipmitool \
-        tree \       
+        tree \
+        obmc-pydevtools \
         spitools \
         bmcweb \
         entity-manager \
@@ -55,4 +56,7 @@ RDEPENDS_${PN}-system = " \
         uart-routing \
         phosphor-sel-logger \
         dbus-sensors \
+        google-ipmi-sys \
+        phosphor-ipmi-ethstats \
+        uart-routing \
         "
