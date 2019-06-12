@@ -26,9 +26,9 @@ RPROVIDES_${PN}-system += "virtual-obmc-system-mgmt"
 
 SUMMARY_${PN}-chassis = "Lenovo Chassis"
 RDEPENDS_${PN}-chassis = " \
+        x86-power-control \
         obmc-control-chassis \
         obmc-op-control-power \
-        lenovo-powerctrl \
         "
 
 SUMMARY_${PN}-fans = "Lenovo Fans"
