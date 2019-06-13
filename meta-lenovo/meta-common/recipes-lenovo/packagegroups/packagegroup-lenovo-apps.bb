@@ -56,4 +56,5 @@ RDEPENDS_${PN}-system = " \
         uart-routing \
         phosphor-sel-logger \
         dbus-sensors \
-        "
+        phosphor-host-postd \
+	"
