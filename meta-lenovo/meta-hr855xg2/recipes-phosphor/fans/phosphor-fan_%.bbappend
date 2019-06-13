@@ -1,6 +1,5 @@
-#"Copyright ? 2019-present Lenovo
+#"Copyright (c) 2019-present Lenovo
 #Licensed under BSD-3, see COPYING.BSD file for details."
-
 
 FILESEXTRAPATHS_append := "${THISDIR}/${PN}:"
 
@@ -23,4 +22,3 @@ SYSTEMD_LINK_phosphor-cooling-type += "${@compose_list(d, 'FMT_COOLING', 'OBMC_C
 COOLING_ENV_FMT = "obmc/phosphor-fan/phosphor-cooling-type-{0}.conf"
 
 SYSTEMD_ENVIRONMENT_FILE_phosphor-cooling-type += "${@compose_list(d, 'COOLING_ENV_FMT', 'OBMC_CHASSIS_INSTANCES')}"
-

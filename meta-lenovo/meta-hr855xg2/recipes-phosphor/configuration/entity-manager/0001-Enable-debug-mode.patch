@@ -1,3 +1,6 @@
+#"Copyright (c) 2019-present Lenovo
+#Licensed under BSD-3, see COPYING.BSD file for details."
+
 diff -Naur a/src/FruDevice.cpp b/src/FruDevice.cpp
 --- a/src/FruDevice.cpp	2019-04-24 10:35:24.907540399 +0800
 +++ b/src/FruDevice.cpp	2019-04-26 18:15:45.055981567 +0800

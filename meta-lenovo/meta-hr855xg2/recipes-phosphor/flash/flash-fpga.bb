@@ -1,3 +1,5 @@
+#"Copyright (c) 2019-present Lenovo
+
 FILESEXTRAPATHS_append := "${THISDIR}/flash-fpga:"
 SUMMARY = "Phosphor OpenBMC fpga test."
 DESCRIPTION = "Phosphor OpenBMC fpga test."

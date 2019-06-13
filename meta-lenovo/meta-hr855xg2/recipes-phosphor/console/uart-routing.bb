@@ -1,3 +1,5 @@
+#"Copyright (c) 2019-present Lenovo"
+
 FILESEXTRAPATHS_append := "${THISDIR}/uart-routing:"
 SUMMARY = "hr855xg2 Uart Routing"
 PR = "r1"
@@ -21,5 +23,3 @@ do_install() {
     install -d ${D}/usr/sbin
     install -m 0755 ${S}cross-link.sh ${D}/${sbindir}/
 }
-
-

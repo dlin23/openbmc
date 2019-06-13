@@ -1,6 +1,9 @@
-//"Copyright ? 2019-present Lenovo
-//Licensed under GPL v2, see COPYING file for details."
-
+// SPDX-License-Identifier: GPL-2.0+
+/*
+ * Device Tree file for Lenovo Hr855xg2 platform
+ *
+ * Copyright (C) 2019-present Lenovo
+ */
 
 /dts-v1/;
 
@@ -28,7 +31,7 @@
 
 		flash_memory: region@98000000 {
 			no-map;
-			reg = <0x98000000 0x04000000>; /* 64M */
+			reg = <0x98000000 0x00100000>; /* 1M */
 		};		
 		
 		gfx_memory: framebuffer {
@@ -39,7 +42,6 @@
 		};
 	};
 	
-
 	leds {
 		compatible = "gpio-leds";
 
@@ -129,7 +131,6 @@
 &uart5 {
 	status = "okay";
 };
-
 
 &ibt {
 	status = "okay";	
@@ -289,7 +290,6 @@
 
 };
 
-
 &i2c7 {
 	status = "okay";
 	
@@ -302,31 +302,17 @@
 
 &i2c9 {
 	status = "okay";
-
 };
 
 &i2c10 {
 	status = "okay";
-	
 };
 
 &i2c11 {
 	status = "okay";
-
 };
 
 &i2c13 {
-	status = "okay";
-
-};
-
-/*
- * Enable port A as device (via the virtual hub) and port B as
- * host by default on the eval board. This can be easily changed
- * by replacing the override below with &ehci0 { ... } to enable
- * host on both ports.
- */
-&vhub {
 	status = "okay";
 };
 

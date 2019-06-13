@@ -1,3 +1,5 @@
+#"Copyright (c) 2019-present Lenovo
+
 SUMMARY = "hr855xg2 Sensor config for phosphor-host-ipmi"
 PR = "r1"
 LICENSE = "BSD-3-Clause"

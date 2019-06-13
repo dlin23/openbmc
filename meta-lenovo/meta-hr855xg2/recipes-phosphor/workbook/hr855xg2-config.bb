@@ -1,3 +1,5 @@
+#"Copyright (c) 2019-present Lenovo
+
 SUMMARY = "hr855xg2 board wiring"
 DESCRIPTION = "Board wiring information for the hr855xg2 system."
 PR = "r1"

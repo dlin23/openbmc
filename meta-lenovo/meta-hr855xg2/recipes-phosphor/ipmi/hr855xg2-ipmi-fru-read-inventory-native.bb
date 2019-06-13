@@ -1,3 +1,5 @@
+#"Copyright (c) 2019-present Lenovo
+
 SUMMARY = "hr855xg2 inventory map for phosphor-ipmi-host"
 PR = "r1"
 LICENSE = "BSD-3-Clause"

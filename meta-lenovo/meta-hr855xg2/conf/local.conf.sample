@@ -1,4 +1,4 @@
-#"Copyright ? 2019-present Lenovo
+#"Copyright (c) 2019-present Lenovo
 #Licensed under BSD-3, see COPYING.BSD file for details."
 
 MACHINE ??= "hr855xg2"
@@ -18,11 +18,7 @@ BB_DISKMON_DIRS = "\
     ABORT,${SSTATE_DIR},100M,1K \
     ABORT,/tmp,10M,1K"
 CONF_VERSION = "1"
-
 INHERIT += "extrausers"
 EXTRA_USERS_PARAMS = " \
   usermod -p '\$1\$UGMqyqdG\$FZiylVFmRRfl9Z0Ue8G7e/' root; \
   "
-  
-INHERIT += "buildhistory"
-BUILDHISTORY_COMMIT = "1"	 

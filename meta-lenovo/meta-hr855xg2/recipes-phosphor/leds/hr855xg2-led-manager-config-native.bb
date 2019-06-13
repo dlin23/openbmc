@@ -1,3 +1,5 @@
+#"Copyright (c) 2019-present Lenovo
+
 SUMMARY = "Phosphor LED Group Management for hr855xg2"
 PR = "r1"
 LICENSE = "BSD-3-Clause"

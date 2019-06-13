@@ -1,4 +1,3 @@
-
 {
     "gpio_configs": {
 
@@ -13,13 +12,11 @@
         }
     },
 
-
     "gpio_definitions": [
         {
             "name": "PGOOD",
             "pin": "H7",
             "direction": "in"
         }
-
     ]
 }
